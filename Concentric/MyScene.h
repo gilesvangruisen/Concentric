@@ -7,7 +7,10 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "CCPlayer.h"
 
 @interface MyScene : SKScene
+
+@property (nonatomic, retain) CCPlayer *player;
 
 @end

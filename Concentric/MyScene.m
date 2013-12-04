@@ -10,20 +10,20 @@
 
 @implementation MyScene
 
+@synthesize player;
+
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        self.backgroundColor = [SKColor colorWithWhite:0.2 alpha:1];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
+        SKShapeNode *node = [SKShapeNode node];
+        node.path = CGPathCreateWithRect(CGRectMake(200, 100, 30, 30), NULL);
+        node.strokeColor = nil;
+        node.fillColor =[SKColor colorWithWhite:0.8 alpha:1];
+        [self addChild:node];
     }
     return self;
 }
@@ -36,6 +36,8 @@
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+    
+    
 }
 
 @end

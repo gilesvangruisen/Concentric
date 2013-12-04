@@ -23,7 +23,8 @@
 		508B76FF1846CEBC00AB5616 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508B76DA1846CEBC00AB5616 /* UIKit.framework */; };
 		508B77071846CEBC00AB5616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 508B77051846CEBC00AB5616 /* InfoPlist.strings */; };
 		508B77091846CEBC00AB5616 /* ConcentricTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B77081846CEBC00AB5616 /* ConcentricTests.m */; };
-		508B77141846CF3B00AB5616 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 508B77131846CF3B00AB5616 /* Player.m */; };
+		50FE60F6184C39BC0021FB11 /* CCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE60F5184C39BC0021FB11 /* CCPlayer.m */; };
+		50FE60F9184D776A0021FB11 /* CCPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE60F8184D776A0021FB11 /* CCPlatform.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +60,10 @@
 		508B77041846CEBC00AB5616 /* ConcentricTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConcentricTests-Info.plist"; sourceTree = "<group>"; };
 		508B77061846CEBC00AB5616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		508B77081846CEBC00AB5616 /* ConcentricTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcentricTests.m; sourceTree = "<group>"; };
-		508B77121846CF3B00AB5616 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		508B77131846CF3B00AB5616 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		50FE60F4184C39BC0021FB11 /* CCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayer.h; sourceTree = "<group>"; };
+		50FE60F5184C39BC0021FB11 /* CCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayer.m; sourceTree = "<group>"; };
+		50FE60F7184D776A0021FB11 /* CCPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlatform.h; sourceTree = "<group>"; };
+		50FE60F8184D776A0021FB11 /* CCPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlatform.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +132,10 @@
 				508B76EE1846CEBC00AB5616 /* ViewController.m */,
 				508B76F01846CEBC00AB5616 /* MyScene.h */,
 				508B76F11846CEBC00AB5616 /* MyScene.m */,
-				508B77121846CF3B00AB5616 /* Player.h */,
-				508B77131846CF3B00AB5616 /* Player.m */,
+				50FE60F4184C39BC0021FB11 /* CCPlayer.h */,
+				50FE60F5184C39BC0021FB11 /* CCPlayer.m */,
+				50FE60F7184D776A0021FB11 /* CCPlatform.h */,
+				50FE60F8184D776A0021FB11 /* CCPlatform.m */,
 				508B76F51846CEBC00AB5616 /* Images.xcassets */,
 				508B76DF1846CEBC00AB5616 /* Supporting Files */,
 			);
@@ -263,11 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FE60F9184D776A0021FB11 /* CCPlatform.m in Sources */,
 				508B76F21846CEBC00AB5616 /* MyScene.m in Sources */,
 				508B76EF1846CEBC00AB5616 /* ViewController.m in Sources */,
 				508B76E91846CEBC00AB5616 /* AppDelegate.m in Sources */,
 				508B76E51846CEBC00AB5616 /* main.m in Sources */,
-				508B77141846CF3B00AB5616 /* Player.m in Sources */,
+				50FE60F6184C39BC0021FB11 /* CCPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +484,7 @@
 				508B770E1846CEBC00AB5616 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		508B770F1846CEBC00AB5616 /* Build configuration list for PBXNativeTarget "ConcentricTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +493,7 @@
 				508B77111846CEBC00AB5616 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
